@@ -17,9 +17,6 @@ Pod::Spec.new do |s|
     '*.xcframework'
   ]
 
-  s.dependency 'FirebaseCore', firebase_firestore_version
-  s.dependency 'FirebaseCoreExtension', firebase_firestore_version
-  s.dependency 'FirebaseFirestoreInternalBinary', firebase_firestore_version
   s.dependency 'FirebaseSharedSwift', firebase_firestore_version
 
   s.requires_arc = true
