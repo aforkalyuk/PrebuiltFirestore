@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PrebuiltFirestore'
-  s.version          = '1.0.0'
+  s.version          = '11.12.0'
   s.summary          = 'Prebuilt FirebaseFirestore and dependencies'
   s.description      = 'Precompiled FirebaseFirestore with all required xcframeworks.'
   s.homepage         = 'https://github.com/aforkalyuk/PrebuiltFirestore'
