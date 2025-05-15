@@ -1,6 +1,8 @@
+firebase_firestore_version='11.12.0'
+
 Pod::Spec.new do |s|
   s.name             = 'PrebuiltFirestore'
-  s.version          = '11.12.0'
+  s.version          = firebase_firestore_version
   s.summary          = 'Prebuilt FirebaseFirestore and dependencies'
   s.description      = 'Precompiled FirebaseFirestore with all required xcframeworks.'
   s.homepage         = 'https://github.com/aforkalyuk/PrebuiltFirestore'
@@ -14,6 +16,11 @@ Pod::Spec.new do |s|
   s.source_files = [
     '*.xcframework'
   ]
+
+  s.dependency 'FirebaseCore', firebase_firestore_version
+  s.dependency 'FirebaseCoreExtension', firebase_firestore_version
+  s.dependency 'FirebaseFirestoreInternalBinary', firebase_firestore_version
+  s.dependency 'FirebaseSharedSwift', firebase_firestore_version
 
   s.requires_arc = true
 end
