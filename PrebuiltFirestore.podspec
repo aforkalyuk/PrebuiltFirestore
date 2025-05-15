@@ -9,13 +9,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '15.0'
   s.source           = { :http => 'https://github.com/aforkalyuk/PrebuiltFirestore/releases/download/11.12.0/source.zip' }
 
-  s.vendored_frameworks = [
-    'FirebaseFirestore.xcframework',
-    'FirebaseFirestoreInternal.xcframework',
-    'grpc.xcframework',
-    'grpccpp.xcframework',
-    'openssl_grpc.xcframework'
-  ]
+  s.vendored_frameworks = 'PrebuiltFirestore/*.xcframework'
 
   s.requires_arc = true
 end
